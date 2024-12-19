@@ -31,159 +31,220 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
       <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet"> <!-- Import Montserrat -->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+      <link href="bootstrap.min.css" rel="stylesheet">
+<link href="custom-styles.css" rel="stylesheet">
 
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet"> <!-- Montserrat Font -->
-
+    <style>
+      .custom_nav-container {
+        display: flex !important;
+        justify-content: flex-start !important;
+        align-items: center !important;
+        padding-left: 0 !important;
+      }
+      .navbar-brand {
+        margin-right: auto !important;
+      }
+      .logo-img {
+        max-height: 50px;
+        width: auto;
+      }
+    </style>
+    
 
    </head>
    <body>
-      <!--header section start -->
-      <div class="header_section">
-         <div class="container-fluid">
-            <div class="row">
-               <div class="col-md-3">
-                  <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
+
+
+      <div class="hero_area">
+         <!-- header section strats -->
+         <div class="hero_bg_box">
+           <div class="img-box">
+             <img src="images/hero-bg.jpg" alt="">
+           </div>
+         </div>
+     
+         <header class="header_section">
+           <div class="header_top">
+             <div class="container-fluid">
+               <div class="contact_link-container">
+                 <a href="" class="contact_link1">
+                   <i class="fa fa-map-marker" aria-hidden="true"></i>
+                   <span>
+                     Cherrywood, Dublin, Republic of Ireland- Johannesburg, South Africa.
+                   </span>
+                 </a>
+                 
+                 <a href="" class="contact_link3">
+                   <i class="fa fa-envelope" aria-hidden="true"></i>
+                   <span>
+                     admin@ntsconsult.com
+                   </span>
+                 </a>
                </div>
-               <div class="col-md-9">
-                  <div class="menu_text">
-                     <ul>
-                        <div id="myNav" class="overlay">
-                           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                           <div class="overlay-content">
-                              <a href="index.html">Home</a>
-                              <div class="dropdown">
-                                 <a href="about.html" class="dropdown-toggle">About</a>
-                                 <div class="dropdown-menu">
-                                    <a href="core-value.html">Core Value</a>
-                                    <a href="our-people.html">Our People</a>
-                                    <a href="our-clients.html">Our Clients</a>
-                                 </div>
-                              </div>
-                              <div class="dropdown">
-                                 <a href="services.html" class="dropdown-toggle">Services</a>
-                                 <div class="dropdown-menu">
-                                    <a href="assurance.html">Assurance</a>
-                                    <a href="risk-advisory.html">Risk Advisory</a>
-                                    <a href="governance.html">Governance</a>
-                                    <a href="business-consulting.html">Business Consulting</a>
-                                 </div>
-                              </div>
-                              <a href="contact.html">Contact Us</a>
-                           </div>
+             </div>
+           </div>
+           <div class="header_bottom">
+             <div class="container-fluid">
+               <nav class="navbar navbar-expand-lg custom_nav-container">
+                  <a class="navbar-brand" href="index.html">
+                     <img src="images/NTS Consulting logo2.png" alt="NTS Consulting Logo" class="logo-img">
+                   </a>
+                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                   <span class=""></span>
+                 </button>
+     
+                 <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
+                   <ul class="navbar-nav  ">
+                     <ul class="navbar-nav">
+
+                        <!-- Home -->
+                        <li class="nav-item active">
+                          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                      
+                        <!-- About Us Dropdown -->
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            About Us
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <a class="dropdown-item" href="core-value.html">Core Values</a>
+                            <a class="dropdown-item" href="our-people.html">Our People</a>
+                            <a class="dropdown-item" href="our-clients.html">Our Client Profile</a>
+                          </div>
+                        </li>
+                      
+                        <!-- Services Dropdown -->
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Services
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <a class="dropdown-item" href="assurance.html">Assurance</a>
+                            <a class="dropdown-item" href="risk-advisory.html">Risk Advisory</a>
+                            <a class="dropdown-item" href="governance.html">Governance</a>
+                            <a class="dropdown-item" href="business-consulting.html">Business Consulting</a>
+                          </div>
+                        </li>
+                      
+                        <!-- Contact Us -->
+                        <li class="nav-item">
+                          <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                      
+                      </ul>
+                      
+                   </ul>
+                 </div>
+               </nav>
+             </div>
+           </div>
+         </header>
+         <!-- end header section -->
+
+
+
+         
+         <!-- slider section -->
+         <section class="slider_section">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+          
+                <!-- Assurance Slide -->
+                <div class="carousel-item active">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-7">
+                        <div class="detail-box">
+                          <h1>
+                            Assurance <br>
+                            <span>
+                              Your Confidence, Our Commitment
+                            </span>
+                          </h1>
+                          <p>
+                            We provide thorough assurance services to ensure the reliability and integrity of your operations. Trust us to uphold your standards.
+                          </p>
+                          <div class="btn-box">
+                            <a href="" class="btn-1"> Read more </a>
+                            <a href="" class="btn-2">Get A Quote</a>
+                          </div>
                         </div>
-                        
-                        <span class="navbar-toggler-icon"></span>
-                        <span onclick="openNav()"><img src="images/toogle-icon.png" class="toggle_menu"></span>
+                      </div>
+                    </div>
                   </div>
-                  </li>
-                  </ul>
-               </div>
-            </div>
-         </div>
-
-
-
-         <!-- banner section start -->
-         <div class="banner_section">
-            <div class="container-fluid padding_0">
-               <div id="my_slider" class="carousel slide" data-ride="carousel">
-                  <div class="carousel-inner">
-                     <div class="carousel-item active">
-                        <div class="row">
-                           <div class="col-md-6">
-                              <div class="padding_left_0">
-                                 <h1 class="retailer_text">We Are Provide Professional Consulting</h1>
-                                 <p class="search_text">It is a long established fact that a reader will be distracted by the readable content of a page </p>
-                                 <div class="btn_main">
-                                    <div class="more_bt"><a href="#">Read More </a></div>
-                                    <div class="contact_bt"><a href="#">Get A Quote</a></div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-md-6">
-                              <div><img src="images/img-1.png" class="image_1"></div>
-                           </div>
+                </div>
+          
+                <!-- Advisory Slide -->
+                <div class="carousel-item">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-7">
+                        <div class="detail-box">
+                          <h1>
+                            Advisory <br>
+                            <span>
+                              Expert Guidance for Success
+                            </span>
+                          </h1>
+                          <p>
+                            Our advisory solutions help you navigate challenges and capitalize on opportunities with expert insights tailored to your goals.
+                          </p>
+                          <div class="btn-box">
+                            <a href="" class="btn-1"> Read more </a>
+                            <a href="" class="btn-2">Get A Quote</a>
+                          </div>
                         </div>
-                     </div>
-                     <div class="carousel-item">
-                        <div class="row">
-                           <div class="col-md-6">
-                              <div class="padding_left_0">
-                                 <h1 class="retailer_text">We Provide Professional Consulting</h1>
-                                 <p class="search_text">It is a long established fact that a reader will be distracted by the readable content of a page </p>
-                                 <div class="btn_main">
-                                    <div class="more_bt"><a href="#">Read More </a></div>
-                                    <div class="contact_bt"><a href="#">Get A Quote</a></div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-md-6">
-                              <div><img src="images/img-1.png" class="image_1"></div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="carousel-item">
-                        <div class="row">
-                           <div class="col-md-6">
-                              <div class="padding_left_0">
-                                 <h1 class="retailer_text">We Are Provide Professional Consulting</h1>
-                                 <p class="search_text">It is a long established fact that a reader will be distracted by the readable content of a page </p>
-                                 <div class="btn_main">
-                                    <div class="more_bt"><a href="#">Read More </a></div>
-                                    <div class="contact_bt"><a href="#">Get A Quote</a></div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-md-6">
-                              <div><img src="images/img-1.png" class="image_1"></div>
-                           </div>
-                        </div>
-                     </div>
+                      </div>
+                    </div>
                   </div>
-                  <a class="carousel-control-prev" href="#my_slider" role="button" data-slide="prev">
-                  <i class="fa fa-left"><img src="images/left-arrow.png"></i>
-                  </a>
-                  <a class="carousel-control-next" href="#my_slider" role="button" data-slide="next">
-                  <i class="fa fa-right"><img src="images/right-arrow.png"></i>
-                  </a>
-               </div>
+                </div>
+          
+                <!-- Consulting Slide -->
+                <div class="carousel-item">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-7">
+                        <div class="detail-box">
+                          <h1>
+                            Consulting <br>
+                            <span>
+                              Solutions Tailored to You
+                            </span>
+                          </h1>
+                          <p>
+                            Unlock your potential with our consulting services, designed to provide innovative strategies for growth and efficiency.
+                          </p>
+                          <div class="btn-box">
+                            <a href="" class="btn-1"> Read more </a>
+                            <a href="" class="btn-2">Get A Quote</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          
+              </div>
             </div>
-         </div>
-         </div>
-
- <!-- banner section end -->
-
-      <!-- header section end -->
-      <div class="image_main">
-         <div class="container-fluid">
-            <div class="image_2">
-               <div class="image_0">
-                  <!-- Video Container -->
-                  <video class="header_video" autoplay loop muted>
-                     <source src="images/consulting video.mp4" type="video/mp4">
-                     Your browser does not support the video tag.
-                  </video>
-               </div>
-               <h2 class="see_text">SEE <span style="color: #470005;">Consulting</span> VIDEOS</h2>
-            </div>
-         </div>
-      </div>
-      <div class="advisor_section">
-         <div class="container">
-            <h1 class="what_text">What We Do</h1>
-         </div>
-      </div>
-      
+             <div class="container idicator_container">
+               <ol class="carousel-indicators">
+                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+               </ol>
+             </div>
+           </div>
+         </section>    
+       </div>
+     <!-- end slider section -->
 
 
 
 
-
-
-
-
-
+<!-- advisory start -->
 
       <div class="advisor_section_2 layout_padding">
          <div class="container">
@@ -214,7 +275,7 @@
             </div>
          </div>
       </div>
-
+<!-- advisory end -->
 
 
 
@@ -320,7 +381,7 @@
          </div>
          <div class="portfolio_section_2 layout_padding">
             <div class="container">
-               <h1 class="best_taital">We Are Providing Best Business Service</h1>
+               <h1 class="best_taital">We Provide The Best Business Service</h1>
                <p class="best_text">We serve clients in South Africa, the United Kingdom, the Republic of Ireland, and the United States.</p>
                <div class="get_bt"><a href="contact.html">Get A Quote</a></div>
             </div>
@@ -474,7 +535,11 @@
          <!-- Address -->
          <div class="footer_column">
             <h4>Address</h4>
-            <p>123 Street Name,<br> City, State, ZIP<br> Phone: +123 456 7890</p>
+            <p>Cherrywood,<br> Bublin<br> Republic of Ireland</p>
+         </div>
+         <div class="footer_column">
+            <h4>Address</h4>
+            <p>Johannesburg,<br> Gauteng<br> South Africa</p>
          </div>
 
          <!-- Quick Links -->
