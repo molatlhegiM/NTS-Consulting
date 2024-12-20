@@ -613,6 +613,7 @@ a:focus {
 
 
 
+
 .advisor_section{
     width: 100%;
     float: left;
@@ -774,52 +775,50 @@ body {
 
 
 /*-------------------------our people -------------------*/
-/* General Styling */
-body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-}
-
-/* Section Title */
-.section-title {
-    text-align: center;
-    font-size: 42px;
-    margin: 20px 0;
-    color: #041a47;
-    font-weight: 800;
-}
-
-/* Our People Section */
+/* General Styling for Our People Section */
 .our-people-section {
-    padding: 20px;
-    background-color: #fff;
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
 }
 
-/* Team Container */
+.section-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
 .team-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     gap: 20px;
 }
 
-/* Team Member Card */
 .team-member {
-    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
     width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* Image Frame (Circular) */
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
 .image-frame {
-    width: 150px;
-    height: 150px;
-    margin: 0 auto;
-    border-radius: 50%;
+    width: 100%;
+    height: 300px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: 5px solid #005f73;
+    background-color: #f4f4f4;
 }
 
 .image-frame img {
@@ -828,40 +827,34 @@ body {
     object-fit: cover;
 }
 
-/* Info Bar */
 .info-bar {
-    margin-top: -10px;
-    background-color: #005f73;
-    color: #fff;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
 }
 
 .info-bar h3 {
-    font-size: 18px;
-    font-weight: 800;
-    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
 }
 
 .info-bar p {
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 16px;
+    color: #666;
     margin: 0;
 }
 
-/* Description Paragraph */
 .team-description {
-    margin-top: 30px;
-    text-align: center;
+    margin-top: 40px;
     font-size: 18px;
-    color: #2c2c2c;
-    line-height: 1.6;
-    padding: 0 20px;
-    max-width: 900px;
+    color: #555;
+    line-height: 1.8;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
 }
+
 
 
 /*-------------------------our people end-------------------*/
@@ -996,22 +989,26 @@ body {
 
 .container {
     width: 90%;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
 h1 {
     text-align: center;
-    color: #333;
+    color: #161111;
+    font-size: 2rem;
 }
 
 p {
-    color: #f0ebeb;
+    color: #f3e6e6; /* Updated for better readability */
     line-height: 1.6;
+    font-size: 16rem;
 }
 
 .info-bar {
     display: flex;
+    flex-wrap: wrap; /* Enables wrapping for smaller screens */
     margin: 20px 0;
     background-color: #fff;
     border: 1px solid #ddd;
@@ -1021,10 +1018,13 @@ p {
 .split {
     flex: 1;
     padding: 20px;
+    min-width: 300px; /* Ensures each section is readable on smaller screens */
+    box-sizing: border-box;
 }
 
 .split h2 {
     color: #333;
+    font-size: 1.5rem;
 }
 
 .split ul {
@@ -1035,16 +1035,27 @@ p {
 .split ul li {
     margin-bottom: 10px;
     color: #555;
+    font-size: 1rem;
 }
 
 .scrolling-fact {
     text-align: center;
-    font-size: 34px;
-    color: #007BFF;
+    font-size: 2rem; /* Adjusted for smaller screens */
+    color: #40c7ed;
     font-weight: bold;
     animation: scroll-text 5s linear infinite;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
+
+.external-assessments-img {
+    display: block; /* Ensures the image is treated as a block element */
+    margin: 10px auto; /* Centers the image horizontally */
+    max-width: 100%; /* Ensures the image doesn't exceed the container width */
+    height: auto; /* Maintains aspect ratio */
+    border: 1px solid #ddd; /* Optional: Add a border for a polished look */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
 
 @keyframes scroll-text {
     0% { opacity: 0; transform: translateY(-20px); }
@@ -1054,9 +1065,64 @@ p {
 
 .closing-paragraph {
     text-align: center;
-    color: #333;
+    color: #f5ebeb;
     font-weight: bold;
     margin-top: 40px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .info-bar {
+        flex-direction: column; /* Stacks sections vertically */
+    }
+
+    .split {
+        padding: 15px;
+        text-align: center; /* Align content centrally */
+    }
+
+    .split h2 {
+        font-size: 1.3rem;
+    }
+
+    .split ul li {
+        font-size: 0.9rem;
+    }
+
+    .scrolling-fact {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .split {
+        padding: 10px;
+    }
+
+    .split h2 {
+        font-size: 1.2rem;
+    }
+
+    .scrolling-fact {
+        font-size: 1rem;
+    }
+
+    .closing-paragraph {
+        font-size: 0.9rem;
+        margin-top: 20px;
+    }
 }
 
 
@@ -1087,12 +1153,12 @@ body {
 
 h1 {
     text-align: center;
-    color: #1a73e8;
+    color: #041731;
     margin-bottom: 20px;
 }
 
 p {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.6;
     margin-bottom: 20px;
 }
@@ -1172,10 +1238,10 @@ p {
 }
 
 .bottom-text {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.6;
     text-align: center;
-    color: #555;
+    color: #f6e5e5;
     margin-top: 20px;
     clear: both; /* Ensures the paragraph is positioned below all floated or flex content */
 }
@@ -1223,14 +1289,14 @@ header h1 {
 
 .content .paragraph:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 15px rgb(0, 0, 0);
 }
 
 .content .paragraph p {
     font-size: 18px;
     line-height: 1.8;
+    color: #000; /* Set to black */
 }
-
 /* Services Section */
 .services {
     margin-top: 40px;
@@ -1726,6 +1792,44 @@ textarea.massage-bt {
 .send_bt button:hover {
     background-color: #420106;
     transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact_wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .office_details, .email_box {
+        width: 100%;
+    }
+
+    .office_details {
+        margin-bottom: 20px;
+    }
+
+    .email-bt, .massage-bt {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    .send_bt button {
+        font-size: 16px;
+        padding: 10px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .office_details p, .email-bt, .massage-bt {
+        font-size: 12px;
+    }
+
+    .send_bt button {
+        font-size: 14px;
+        padding: 8px 20px;
+    }
 }
 
 
