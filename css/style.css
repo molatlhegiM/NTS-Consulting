@@ -1465,7 +1465,13 @@ body {
 
 
 
-
+.portfolio_heading {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+    color: #333; /* Adjust color as needed */
+ }
+ 
 
 
 
