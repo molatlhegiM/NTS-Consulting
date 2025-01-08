@@ -153,20 +153,20 @@
               <div class="footer_column">
                  <h4>Quick Links</h4>
                  <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html"></a></li>
+                    <li><a href="core-value.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                  </ul>
               </div>
      
               <!-- Stay Connected -->
               <div class="footer_column">
                  <h4>Stay Connected</h4>
-                 <form>
-                    <input type="email" placeholder="Your Email" />
-                    <input type="text" placeholder="Your Phone" />
-                    <button type="submit">Subscribe</button>
+                 <form id="subscribeForm">
+                     <input type="email" id="email" name="Email" placeholder="Your Email" required>
+                     <input type="text" id="phone" name="Phone" placeholder="Your Phone" required>
+                     <button type="button" onclick="handleFormSubmit()">Subscribe</button>
                  </form>
                  <div class="social_icons">
                     <a href="#"><img src="images/fb-icon.png" alt="Facebook"></a>
