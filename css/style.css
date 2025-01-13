@@ -1185,7 +1185,7 @@ h1 {
 }
 
 p {
-    font-size: 20px;
+    font-size: 28px;
     line-height: 1.6;
     margin-bottom: 20px;
 }
@@ -1461,10 +1461,6 @@ body {
 
 
 
-
-
-
-
 .portfolio_heading {
     font-size: 18px;
     text-align: center;
@@ -1472,30 +1468,6 @@ body {
     color: #333; /* Adjust color as needed */
  }
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1522,11 +1494,13 @@ body {
 .lorem_text {
     width: 100%;
     float: left;
-    font-size: 16px;
+    font-size: 20px;
     color: #1d1c24;
     margin-left: 0px;
     padding-bottom: 20px;
+    font-weight: 500; /* Added for a slightly bolder look */
 }
+
 .portfolio_section{
     width: 100%;
     float: left;
@@ -1864,6 +1838,137 @@ textarea.massage-bt {
         padding: 8px 20px;
     }
 }
+
+/*-------------------------IT Consulting start  -------------------*/
+
+.it-consulting {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #080808;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.image-container {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.text-content {
+    flex: 2;
+    min-width: 300px;
+}
+
+.text-content h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #031a34;
+}
+
+.text-content ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 10px 0;
+    line-height: 1.6;
+    color: #555;
+}
+
+.text-content ul li {
+    margin-bottom: 10px;
+}
+
+
+.text-content ul {
+    list-style-type: disc; /* Ensures bullets are shown */
+    padding-left: 20px; /* Adds space for the bullets */
+    margin: 10px 0;
+    line-height: 1.6;
+    color: #555;
+}
+
+.text-content ul li {
+    margin-bottom: 10px;
+}
+
+/*-------------------------IT Consulting end  -------------------*/
+
+
+
+/*-------------------------Training start  -------------------*/
+
+.training-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center; /* Center the text */
+}
+
+.training-section .container {
+    max-width: 800px; /* Limit the width for better focus */
+    margin: 0 auto; /* Center the container */
+}
+
+.section-title {
+    font-size: 2rem;
+    color: #0056b3;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.section-description {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.training-image img {
+    max-width: 100%; /* Ensure the image adjusts to the container */
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .section-description {
+        font-size: 1rem;
+    }
+}
+
+
+
+/*-------------------------Training end  -------------------*/
+
+
+
 
 
 
